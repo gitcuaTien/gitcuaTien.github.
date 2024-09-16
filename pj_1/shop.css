@@ -1,0 +1,270 @@
+/* menu */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 15px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(75, 144, 121);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width: 20%;
+    height: 2px;
+    background: rgb(75, 144, 121);
+    position:absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+ /* Banner Shop */
+
+ #banner_header{
+    background-image: url("nguyenlieu/img/banner/b2.jpg");
+    width: 98%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+ }
+ #banner_header h1,p{
+    color: #E3E6f3;
+ }
+ .section-p1{
+    padding: 40px 80px;
+ }
+ .section-m1{
+    margin: 40px 0;
+ }
+ /* product */
+ #product{
+    right: 50%;
+    text-align: center;
+    
+ }
+ #product .f1 a{
+    color: #1a1a1a;
+ }
+ #product .product_frame{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+ }
+ #product .f1{
+    width: 0%;
+    min-width: 200px;
+    padding: 25px 20px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 35px 30px;
+    transition: 0.2s ease;
+    position: relative;
+ }
+#product .f1:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+ #product .f1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product .f1 .label{
+    text-align: start;
+    padding: 5px 0;
+}
+#product .f1 .label span{
+    color: #606063;
+    font-size: 14px;
+}
+#product .f1 .label h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product .f1 .label i{
+    font-size: 12px;
+    color: rgba(243, 181, 25);
+}
+#product .f1 .label h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product .f1 .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#product .f1 .label span,h5,h4{
+    margin: 0;
+    padding: 0;
+}
+/* next page */
+#next-page{
+    text-align: center;
+}
+#next-page a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+#next-page a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+/* information */
+#information{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("nguyenlieu/img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+
+#information h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#information p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+
+#information p span{
+    color: #ccdc20;
+}
+
+#information .form{
+    display: flex;
+    width: 40%;
+}
+
+#information input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 110%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius:0 ;
+    border-bottom-right-radius:0 ;
+}
+
+#information button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-radius: 5px;
+    width: 40%;
+    border-top-left-radius:0 ;
+    border-bottom-left-radius:0 ;
+}
+/* address */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    color: #6b6f83;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #6b6f83;
+    margin-bottom: 10px;
+}
+
+footer .fol i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install .pay img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .fol i :hover,
+footer a:hover{
+    color: #088178;
+}
+footer .copyr{
+    width: 100%;
+    text-align: center;
+    color: #6b6f83;
+   
+}
